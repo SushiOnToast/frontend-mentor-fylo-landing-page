@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+
+  <!-- importing fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="parent">
+    <div class="background">
+      <div class="light-bg">
+        <picture id="bg"> <!-- changing picture when the screen size changes -->
+          <source media="(min-width: 750px)" srcset="./images/bg-curvy-desktop.svg">
+          <source media="(max-width: 749px)" srcset="./images/bg-curvy-mobile.svg">
+          <img src="./images/bg-curvy-desktop.svg">
+        </picture> 
+      </div>
+    </div>
+    <nav>
+      <a href="#" class="nav-links">Features</a>
+      <a href="#" class="nav-links">Team</a>
+      <a href="#" class="nav-links">Sign In</a>
+    </nav>
+    <main>
+      <!-- start of the introduction -->
+      <header>
+        <img src="images/illustration-intro.png" alt="Introductory illustration" id="introduction">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>Fylo stores all your most important files in one secure location. Access them wherever 
+          you need, share and collaborate with friends family, and co-workers.</p>
+        <button id="get-started">Get Started</button>
+      </header>
+      <!--  end of introduction -->
+
+      <!--Start of features section-->
+      <section id="features">
+        <div id="top-section">
+          <div class="feature" id="accessible">
+            <img src="images/icon-access-anywhere.svg" alt="Files accessible from anywhere">
+            <h2>Access your files, anywhere</h2>
+            <p>The ability to use a smartphone, tablet, or computer to access your account means your 
+              files follow you everywhere.</p>
+          </div>
+          <div class="feature" id="secure">
+            <img src="images/icon-security.svg" alt="Secure files">
+            <h2>Security you can trust</h2>
+            <p>2-factor authentication and user-controlled encryption are just a couple of the security 
+              features we allow to help secure your files.</p>
+          </div>
+        </div>
+        <div id="bottom-section">
+          <div class="feature" id="collab">
+            <img src="images/icon-collaboration.svg" alt="Collaboration">
+            <h2>Real-time collaboration</h2>
+            <p>Securely share files and folders with friends, family and colleagues for live collaboration. 
+              No email attachments required.</p>
+          </div>
+          <div class="feature" id="storage">
+            <img src="images/icon-any-file.svg" alt="Store any file">
+            <h2>Store any type of file</h2>
+            <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+              file types to be securely stored and shared.</p>
+          </div>
+        </div>
+      </section>
+      <!--end of features section-->
+
+      <!--start of productivity section-->
+      <section id="productivity">
+        <img src="images/illustration-stay-productive.png" alt="An image showing productive collaboration" id="productive">
+        <div id="productivity-text-content">
+          <h2>Stay productive, wherever you are</h2>
+          <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+            storage needs.</p>
+          <p>Share files and folders with friends, family and colleagues for live collaboration. No email 
+            attachments required.</p>
+          <div id="works">
+            <p id="fylo-working">See how Fylo works</p>
+            <hr>
+          </div>
+        </div>
+      </section>
+      <!--end of productivity section-->
+
+      <!--Start of testimonials section-->
+      <section id="testimonials">
+        <div class="testimonial">
+          <img src="images/bg-quotes.png" alt="background quotation marks" id="quotes">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</p>
+          <div class="testimonial-user-details">
+            <img src="images/profile-1.jpg" alt="Satish Patel's profile picture" class="profile-picture">
+            <div class="name-and-rank">
+              <p class="name">Satish Patel</p>
+              <p class="rank"> Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</p>
+          <div class="testimonial-user-details">
+            <img src="images/profile-2.jpg" alt="Bruce McKenzie's profile picture" class="profile-picture">
+            <div class="name-and-rank">
+              <p class="name">Bruce McKenzie</p>
+              <p class="rank"> Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</p>
+          <div class="testimonial-user-details">
+            <img src="images/profile-3.jpg" alt="Iva Boyd's profile picture" class="profile-picture">
+            <div class="name-and-rank">
+              <p class="name">Iva Boyd</p>
+              <p class="rank"> Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of testimonials section-->
+    </main>
+    <footer>
+      <!--email sign up section-->
+      <section id="email-signup">
+        <div id="email-signup-content-container">
+          <h2>Get early access today</h2>
+          <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+            questions, our support team would be happy to help you.</p>
+          <div id="signup-form">
+            <div id="email-input">
+              <input type="text" placeholder="email@example.com">
+              <small id="input-error">Please enter a valid email</small>
+            </div>
+            
+            <button id="get-started-for-free" onclick="validateInput()">Get Started For Free</button>
+          </div>
+        </div>
+          
+      </section>
+      <!--end of email sign up section-->
+      <div id="footer-bottom">
+        <img src="images/logo.svg" alt="Fylo logo" id="'fylo-logo">
+
+        <section id="contact-details-and-other">
+          <p id="location" class="icon-bullets footer-object">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua</p>
+          <div id="phone-and-email">
+            <p id="phone-num" class="icon-bullets">+1-543-123-4567</p>
+            <p id="contact-email" class="icon-bullets">example@fylo.com</p>
+          </div>
+          <div class="link-list">
+            <a href="#">About Us</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="link-list">
+            <a href="#">Contact Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+          </div> 
+          <div id="socials">
+            <div class="social-icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="social-icon">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <div class="social-icon">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
